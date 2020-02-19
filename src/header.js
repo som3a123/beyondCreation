@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../node_modules/font-awesome/css/font-awesome.min.css'; 
 import { toggle } from './js/script';
+import share from './img/share.png';
 class Header extends Component {
   render() {
 
@@ -14,7 +15,7 @@ class Header extends Component {
     </div>
     
     <div className="last"> 
-        <i id="fa" className="fa fa-book"></i>
+        <img id="fa" src={share} alt="" />
         <a href="#about" style={{textDecoration: 'none'}}>Share <br/> your brief.</a>
         <div className="icon-bar" onClick={toggle}>
             <i></i>
