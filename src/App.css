@@ -1,0 +1,461 @@
+@font-face {
+  font-family: 'Brandon Grotesque Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Black'), url('fonts/brandon-grotesque-black-58a8a3e824392.woff') format('woff');
+}
+@font-face{
+  font-family: 'Brandon Regular';
+  font-style: normal;
+  font-weight: bold;
+  src: url('fonts/brandon-grotesque-light.woff') format('woff');
+}
+
+@font-face{
+  font-family: 'Swiss';
+  font-style: normal;
+  src: url('fonts/swz721l.ttf');
+}
+
+header {
+  font-family: "Brandon Grotesque Black";
+  overflow: hidden;
+  background-color: #000000;
+  height: 60px;
+  text-transform: uppercase;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+header .logo a{
+  display: block;
+  background: url("img/h_03.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 100px;
+}
+  
+
+  
+
+header a{
+    font-family: "Brandon Grotesque Black";
+    color:white;
+}
+    
+
+header .logo{
+    order: 1;
+    flex:0.3;
+    margin-left:6%;
+}
+ .last{
+    order: 3;
+    float:right;
+    text-align: left;
+    font-family: "Brandon Grotesque Black";
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    width: 250px;
+    height: 0;
+    border-top:none;
+    border-left: 25px solid transparent;
+    border-bottom: 60px solid #3399CC;
+}
+
+.last #fa{
+  flex: 0.2;
+
+  margin:8% 4%;
+  transform: scale(1.6);
+}
+
+.last a{
+  flex:2.5;
+  padding: 8% 0;
+  font-size: 0.7vw;
+}
+
+
+h1{
+  font-size: 4.2vw;
+  line-height: 1.2em;
+  margin:0;
+}
+
+
+header .navbar {
+    order: 2;
+    margin: 0 4%;
+    display: flex;
+    
+    flex-wrap: wrap;
+    -webkit-box-flex: 1.5;
+    
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  
+header .navbar ul {
+  
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+header .navbar ul .nav-border{  
+  display: none;
+  background-color: #b4b3b3a6;
+  width: 100%;
+  height: 2px;
+}
+  
+header .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    padding: 0 12px;
+  }
+
+
+  header .last .icon-bar {
+    padding: 20px 20px;
+    width: 20px;
+    height: 20px;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  header .last .icon-bar i {
+    background-color: #ffffff;
+    height: 4px;
+  }
+
+
+  .first-section{
+    height:100vh;
+    background-image: url('img/home-desktop_06.png');
+    background-repeat: no-repeat;
+
+    background-size: cover;
+  }
+
+  .first-section .content{
+    padding: 4% 6%;
+  }
+
+  
+  .first-section .content h1,h2,h3,h4,h5{
+    font-family: "Brandon Grotesque Black";
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+
+  .first-section .content i{
+    margin-top: 20px;
+    background-color:#3399CC;
+    height: 8px;
+    width: 150px;
+    display: block;
+  }
+
+  .second-section{
+    height:900px;
+    background-color: #f1f1f1;
+    
+  }
+  .second-section .content{
+    padding: 4% 6%;
+  }
+
+  .second-section .content i{
+    margin-bottom: 20px;
+    background-color:#3399CC;
+    height: 8px;
+    width: 150px;
+    display: block;
+  }
+
+
+  .second-section .content h1,h2{
+    font-family: "Brandon Grotesque Black";
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+
+  .second-section .content h4{
+    font-family: "Brandon Grotesque Black";
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+
+  .cards{
+    /* margin-left: 5%; */
+    display: flex;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .cards .card{
+      margin: 0.5%;
+      display: flex;
+      width: 280px;
+      height: 340px;
+      background-color: #f7f5f5;
+      border: 2px solid #edededcb;
+      flex-direction: column;
+  }
+
+  .cards .card .img{
+      width: 260px;
+      margin:10px;
+      flex:0.8;
+  }
+  .cards .card .content{
+      font-family: "Brandon Grotesque Black";
+      text-transform: uppercase;
+      margin:5px;
+      /* flex:1.2; */
+  }
+
+  .cards .card .content i{
+      
+      margin: 8px 0;
+      height: 4px;
+      width: 50px;
+      display: block;
+  }
+  .cards .card .content > h2,h5{
+      margin:2px 0;
+  }
+
+
+
+
+  footer {
+    font-family: "Swiss";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #000000;
+    color: #808080;
+    text-align: center;
+  }
+  
+  footer h6{
+    float: left;
+    margin: 20px 6%;
+  }
+  footer .social{
+    float: right;
+    margin: 20px 12%;
+  }
+
+  footer .social a{
+    transform: scale(1.2);
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+
+
+.App {
+  /* text-align: center; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+
+  body{
+    position: relative;
+  }
+  header #nav-bar{
+    display: none;
+    transition: ease 2s;
+  }
+
+
+  header .navbar{
+    
+    display: none;
+    flex:0;
+    background-color: #3399CC;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:60px;
+    margin: 0;
+    width: 100%;
+    left:0;
+    height:0;
+    transition: all 2s;
+  }
+
+  header .navbar ul{
+    /* margin: 20% 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  header .navbar ul .nav-border{
+    display: block;
+  }
+
+  header .navbar ul li:nth-child(10){
+    display: none;
+    
+  }
+
+  header .navbar ul li{
+    flex:1;
+    margin:5px 0;
+    /* border-bottom: 2px solid grey; */
+  }
+  
+  header .logo{
+    flex: 1;
+  }
+  header .last{
+    flex-grow: 1.2;
+    font-size: 4vw;
+  }
+
+  header .last a{
+    flex:4;
+    font-size: 3.2vw;
+    /* padding: 4% 0; */
+  }
+
+  header .last #fa{
+    /* padding: 4% 0; */
+  }
+
+  .first-section .content h1{
+    font-size: 9vw;
+  }
+
+  .second-section .content h1{
+    font-size: 6.5vw;
+  }
+
+  
+
+  header .last .icon-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex: 1;
+  }
+
+  .first-section{
+    display: flex;
+  }
+
+  .first-section .content{
+    align-self: flex-end;
+  }
+
+  .second-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .second-section .cards{
+    display: block;
+    
+    overflow-y:auto;
+    overflow-x: hidden;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .second-section .cards .card{
+    text-align: left;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: row;
+  }
+
+  footer .social{
+    display: flex;
+    flex-direction: row;
+  }
+
+}
