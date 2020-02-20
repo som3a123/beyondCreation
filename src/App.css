@@ -182,7 +182,7 @@ header .last .icon-bar i {
 
 
 .first-section{
-  height:95vh;
+  height:92vh;
   background-image: url('img/home-desktop_06.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -444,7 +444,7 @@ header .last .icon-bar i {
   }
 
   .first-section .content h1{
-    font-size: 9vw;
+    font-size: 7.5vw;
   }
 
   .second-section .content h1{
