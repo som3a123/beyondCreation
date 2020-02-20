@@ -373,6 +373,10 @@ header .last .icon-bar i {
     align-self: flex-end;
   }
 
+  footer .social a{
+    margin: 0 2px;
+  }
+
 
 
 }
@@ -496,6 +500,10 @@ header .last .icon-bar i {
   footer .social{
     display: flex;
     flex-direction: row;
+  }
+
+  footer .social a{
+    margin: 0 2px;
   }
 
 }
